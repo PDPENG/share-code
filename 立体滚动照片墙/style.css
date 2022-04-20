@@ -1,0 +1,53 @@
+/* 
+ * @Author: coder-jason
+ * @Date: 2022-04-20 11:38:07
+ * @LastEditTime: 2022-04-20 12:27:38
+*/
+* {
+      margin: 0; 
+      padding: 0;
+}
+
+body {
+      background: #222;
+      overflow: hidden;
+      user-select: none;
+      background-image: url(./img/bgi.png);
+}
+
+.perspective {
+      perspective: 800px;
+}
+
+.wrap {
+      width: 95px;
+      height: 200px;
+      margin: 100px auto;
+      position: relative;
+      transform: rotateX(-20deg) rotateY(0deg);
+      transform-style: preserve-3d;
+}
+
+.wrap img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: rotateY(0deg) translateZ(0px);
+      background: transparent;
+      box-shadow: 0 0 4px #fff;
+      border-radius: 5px;
+}
+
+.wrap p {
+      width: 1200px;
+      height: 1200px;
+      background: -webkit-radial-gradient(center center, 600px 600px, rgba(122, 122, 122, .5), rgba(0, 0, 0, 0));
+      position: absolute;
+      border-radius: 50%;
+      left: 50%;
+      top: 100%;
+      margin-left: -600px;
+      margin-top: -600px;
+      transform: rotateX(90deg);
+}
